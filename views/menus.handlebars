@@ -1,0 +1,8 @@
+<section>
+    <h2>There are {{menus.length}} menus </h2>
+    {{#each menus}} 
+    <article class = "clearfix item-container block">
+        <h1><a href="/menus/{{id}}">{{name}}</a></h1>
+    </article>
+    {{/each}}
+</section>

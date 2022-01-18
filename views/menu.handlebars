@@ -1,0 +1,15 @@
+<section>
+<h1>{{menu.name}}  </h1>
+<h1>{{menu.Restaurant}}  </h1>
+<h1>{{menu.hours}}  </h1>
+
+{{#each menu.Items}} 
+    <article class = "clearfix item-container block">
+        <h2> {{name}} </h2>
+         <h2> {{price}} </h2>
+    </article>
+    {{/each}}
+    </section>
+
+
+   <p><a href="/restaurants/{{menu.RestaurantId}}"> Restaurant</a></h1>

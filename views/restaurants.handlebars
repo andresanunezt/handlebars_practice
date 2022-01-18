@@ -1,0 +1,8 @@
+<section>
+    <h2>There are {{rests.length}} restaurants </h2>
+    {{#each rests}} 
+    <article class = "clearfix item-container block">
+        <h1><a href="/restaurants/{{id}}">{{name}}</a></h1>
+    </article>
+    {{/each}}
+</section>
