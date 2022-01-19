@@ -7,7 +7,7 @@ async function seed(){
 
     await sequelize.sync({force: true});
 
-    const testRestaurant = await Restaurant.create({name: "The Beatles Cafe",location: "Liverpool, UK" })
+    const testRestaurant = await Restaurant.create({name: "The Beatles Cafe",location: "Liverpool, UK" , img:"https://media.istockphoto.com/photos/the-famous-live-music-bar-beatles-in-varadero-cuba-for-tourists-and-picture-id898449032?s=612x612"})
     
     const tDBreakfast = await Menu.create({name: "Breakfast", hours: "8am-12pm"})
     const tDLunch = await Menu.create({name: "Lunch", hours: "12pm-6pm"})
@@ -35,7 +35,7 @@ async function seed(){
     await tDDinner.addItem(wine)
     await tDDinner.addItem(steak)
 
-    const testRestaurant2 = await Restaurant.create({name: "The Cafe",location: "Brooklyn, NY" })
+    const testRestaurant2 = await Restaurant.create({name: "The Cafe",location: "Brooklyn, NY", img: "https://media.architecturaldigest.com/photos/56e9c2af6836c03a28818cca/16:9/w_2580,c_limit/Devocion.jpg" })
     
     const tDBreakfast2 = await Menu.create({name: "Breakfast", hours: "9am-11Am"})
     const tDLunch2 = await Menu.create({name: "Lunch", hours: "12pm-4pm"})
@@ -64,7 +64,7 @@ async function seed(){
     await tDDinner2.addItem(steak2)
 
 
-    const testRestaurant3 = await Restaurant.create({name: "ALL DAY",location: "Miami, FL" })
+    const testRestaurant3 = await Restaurant.create({name: "ALL DAY",location: "Miami, FL", img: "https://www.hungrypost.com/wp-content/uploads/2018/10/the-hungry-post-all-day-mia-1024x512.jpg"})
     
     const tDBreakfast3 = await Menu.create({name: "Breakfast", hours: "9am-11Am"})
     const tDLunch3 = await Menu.create({name: "Lunch", hours: "12pm-4pm"})

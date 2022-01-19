@@ -59,7 +59,7 @@
 
   
   a:visited {
-    color: tomato;
+    color: rgb(2, 22, 114);
   }
 
   a:active {
@@ -68,7 +68,7 @@
 
   h5 {
     margin-left: 50px;
-    font-weight: bold;
+    font-weight: bolder;
     clear: both;
   }
 
@@ -82,4 +82,7 @@
     margin-left: 50px;
     font-weight: 70;
     clear: both;
+    color: rgb(73, 4, 153);
   }
+
+    a { text-decoration: none; }

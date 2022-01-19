@@ -2,9 +2,10 @@
 <h1>{{rest.name}}  </h2>
 <h2>{{rest.location}}  </h2>
 
+
 {{#each rest.Menus}} 
     <article class = "clearfix item-container block">
-        <h1><a href="/menus/{{id}}">{{name}}</a></h1>
+        <h1><a  class="btn" href="/menus/{{id}}">{{name}}</a></h1>
         <h3>{{hours}}</h2>
         {{#each Items}}
         <h4>{{name}}</h2>
@@ -14,4 +15,6 @@
     {{/each}}
     </section>
 
-    <p><a href="/restaurants"> All Restaurants</a></h1>
+
+    <a class="btn" href="/restaurants"> All Restaurants</a>
+

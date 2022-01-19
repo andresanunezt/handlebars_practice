@@ -2,7 +2,8 @@
     <h2>There are {{rests.length}} restaurants </h2>
     {{#each rests}} 
     <article class = "clearfix item-container block">
-        <h1><a href="/restaurants/{{id}}">{{name}}</a></h1>
+        <h1><a class="btn" href="/restaurants/{{id}}">{{name}}</a></h1>
+        <img src="{{img}}" alt="Restaurant Image" width="500"  >
     </article>
     {{/each}}
 </section>

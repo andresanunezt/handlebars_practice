@@ -5,6 +5,7 @@ class Restaurant extends Model {}
 Restaurant.init({
     name: DataTypes.STRING,
     location: DataTypes.STRING,
+    img: DataTypes.STRING
 }, {
     sequelize,
     timestamps: false,
